@@ -11,7 +11,7 @@ const createRestaurantDetailTemplate = (restaurant) => `
     <h4>City</h4>
     <p>${restaurant.city}</p>
     <h4>Address</h4>
-    <p>${restaurant.address} minutes</p>
+    <p>${restaurant.address}</p>
     <h4>Rating</h4>
     <p>${restaurant.rating}</p>
     <h3>Kategori Menu :</h3> 
@@ -22,24 +22,6 @@ const createRestaurantDetailTemplate = (restaurant) => `
     
   </div>
 `;
-
-/****
-tambahkan ini nanti untuk review 
-<h3>Review<h3>
-    ${restaurant.customerReviews.map((review) => `
-            <h6 tabindex="0">${review.name}</h6>
-            <p tabindex="0" class="date-review">${review.date}</p>
-            <p tabindex="0">${review.review}</p>
-    `).join('')}
-
-    atau pilih ini:
-    <h3>Customer reviews :</h3> <span class="detail-item__reviewer">${restaurant.customerReviews.map((customerName) => customerName.name).join(', ')}</span>
-
-    sambung setelah <category menu> :
-    ${restaurant.categories.map((category) => category.name).join(', ')}
-    <h3>Menu makanan :</h3> ${restaurant.menus.foods.map((food) => food.name).join(', ')}
-    <h3>Menu minuman :</h3> ${restaurant.menus.drinks.map((drink) => drink.name).join(', ')}
-*****/
 
 const createRestaurantItemTemplate = (restaurant) => `
   <div class="restaurant-item">

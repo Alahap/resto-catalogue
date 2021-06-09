@@ -23,7 +23,6 @@
 //       restaurantContainer.innerHTML += createRestaurantItemTemplate(restaurant);
 //     });
 
-//     // TODO: tampilkan movies di dalam DOM
 //   },
 // };
 
